@@ -53,7 +53,7 @@ export default async function Home() {
         </div>
 
         <div className="space-y-6 p-8">
-          <div className="flex">
+          <div className="flex justify-between">
             <div>
               <p className="mb-2 text-sm uppercase tracking-widest text-emerald-400">
                 AI Generated Startup Idea
