@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import RefreshButton from './components/RefreshButton';
 
 type Product = {
   id: string;
@@ -80,9 +81,7 @@ export default async function Home() {
 
             <p className="text-sm text-zinc-500">Slug: {product.slug}</p>
 
-            <p className="mt-2 text-sm text-zinc-400">
-              Refresh the page for another ridiculous AI startup idea.
-            </p>
+            <RefreshButton />
           </div>
         </div>
       </div>
