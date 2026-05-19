@@ -53,12 +53,16 @@ export default async function Home() {
         </div>
 
         <div className="space-y-6 p-8">
-          <div>
-            <p className="mb-2 text-sm uppercase tracking-widest text-emerald-400">
-              AI Generated Startup Idea
-            </p>
-
-            <h1 className="text-4xl font-bold">{product.name}</h1>
+          <div className="flex">
+            <div>
+              <p className="mb-2 text-sm uppercase tracking-widest text-emerald-400">
+                AI Generated Startup Idea
+              </p>
+              <h1 className="text-4xl font-bold">{product.name}</h1>
+            </div>
+            <div>
+              <RefreshButton />
+            </div>
           </div>
 
           <p className="text-lg leading-relaxed text-zinc-300">
@@ -80,8 +84,6 @@ export default async function Home() {
             <p className="text-sm text-zinc-500">Product ID: {product.id}</p>
 
             <p className="text-sm text-zinc-500">Slug: {product.slug}</p>
-
-            <RefreshButton />
           </div>
         </div>
       </div>
